@@ -1,6 +1,7 @@
 # go-open
 > Cross-platform CLI application to open files, directories, URLs from the command-line, written in Go.
 
+[![Build Status](https://travis-ci.org/petermbenjamin/go-open.svg?branch=master)](https://travis-ci.org/petermbenjamin/go-open)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Install
