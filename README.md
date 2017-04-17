@@ -36,9 +36,7 @@ $ open some_file.txt another_file.txt https://google.com https://github.com
 import open "github.com/petermbenjamin/go-open"
 
 open.Open([]string{"file.txt"})
-// or
 open.Open([]string{"https://google.com"})
-// or
 open.Open([]string{"some_file.txt", "another_file.txt", "https://google.com", "https://github.com"})
 ```
 
