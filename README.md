@@ -14,21 +14,18 @@ go get github.com/petermbenjamin/go-open
 
 ### CLI
 
-- Install pre-compiled binaries from [GitHub Releases](https://github.com/petermbenjamin/go-open/releases/latest/)
-- Or build from source: 
-
-  ```
-  go get github.com/petermbenjamin/go-open/cmd/open
-  ```
+```sh
+go get github.com/petermbenjamin/go-open/cmd/gopen
+```
 
 ## Usage
 
 ### CLI
 
 ```sh
-$ open file.txt
-$ open https://google.com
-$ open some_file.txt another_file.txt https://google.com https://github.com
+$ gopen file.txt
+$ gopen https://google.com
+$ gopen some_file.txt another_file.txt https://google.com https://github.com
 ```
 
 ### API
@@ -42,4 +39,5 @@ open.Open([]string{"some_file.txt", "another_file.txt", "https://google.com", "h
 ```
 
 ## License
+
 MIT &copy; [Peter Benjamin](https://petermbenjamin.github.io)
