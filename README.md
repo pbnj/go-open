@@ -20,24 +20,24 @@ go get github.com/petermbenjamin/go-open/cmd/gopen
 
 ## Usage
 
-### CLI
-
-```sh
-$ gopen file.txt
-$ gopen https://google.com
-$ gopen some_file.txt another_file.txt https://google.com https://github.com
-```
-
 ### API
 
 ```go
 import open "github.com/petermbenjamin/go-open"
 
-open.Open([]string{"file.txt"})
-open.Open([]string{"https://google.com"})
-open.Open([]string{"some_file.txt", "another_file.txt", "https://google.com", "https://github.com"})
+open.Open("file.txt")             // will open file in default text editor
+open.Open("https://google.com")   // will open url in default browser
+open.Open("image.png")            // will open image in default image editor
+```
+
+### CLI
+
+```sh
+gopen file.txt
+gopen https://google.com
+gopen some_file.txt another_file.txt https://google.com https://github.com
 ```
 
 ## License
 
-MIT &copy; [Peter Benjamin](https://petermbenjamin.github.io)
+MIT &copy; 2017 [Peter Benjamin](https://petermbenjamin.github.io)
