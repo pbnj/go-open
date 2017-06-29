@@ -4,6 +4,10 @@
 
 ### 0.0.3
 
+#### Added
+
+- Added goreleaser to automate releases.
+
 #### Fixed
 
 - Updated unit test.
