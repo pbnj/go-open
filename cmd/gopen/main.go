@@ -3,9 +3,16 @@ package main
 import (
 	"os"
 
-	open "github.com/petermbenjamin/go-open"
+	gopen "github.com/petermbenjamin/go-open"
 )
 
 func main() {
-	open.Open(os.Args[1:])
+	args := os.Args[1:]
+	if len(args) == 1 {
+		gopen.Open(args[0])
+		return
+	}
+	for _, arg := range args {
+		gopen.Open(arg)
+	}
 }

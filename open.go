@@ -19,14 +19,10 @@ func init() {
 }
 
 // Open will open things in their default applications
-func Open(things []string) {
+func Open(obj string) {
 
-	for _, thing := range things {
-
-		if err := exec.Command(openCmd, thing).Start(); err != nil {
-			fmt.Println(err)
-		}
-
+	if err := exec.Command(openCmd, obj).Start(); err != nil {
+		fmt.Println(err)
 	}
 
 }
