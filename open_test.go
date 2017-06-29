@@ -4,7 +4,7 @@ import "testing"
 
 func TestOpen(t *testing.T) {
 	type args struct {
-		things []string
+		obj string
 	}
 	tests := []struct {
 		name string
@@ -12,27 +12,21 @@ func TestOpen(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{
-			name: "Open URLs",
+			name: "Open URL",
 			args: args{
-				things: []string{"https://google.com", "https://github.com"},
+				obj: "https://google.com",
 			},
 		},
 		{
-			name: "Open files",
+			name: "Open file",
 			args: args{
-				things: []string{".editorconfig", "README.md"},
-			},
-		},
-		{
-			name: "Open mixed",
-			args: args{
-				things: []string{".editorconfig", "https://github.com"},
+				obj: "README.md",
 			},
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			Open(tt.args.things)
+			Open(tt.args.obj)
 		})
 	}
 }

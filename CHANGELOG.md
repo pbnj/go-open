@@ -2,6 +2,12 @@
 
 ## Released
 
+### 0.0.3
+
+#### Fixed
+
+- Updated unit test.
+
 ### 0.0.2
 
 #### Changed
