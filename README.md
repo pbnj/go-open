@@ -1,4 +1,5 @@
 # go-open
+
 > Cross-platform CLI application to open files, directories, URLs from the command-line, written in Go.
 
 [![Build Status](https://travis-ci.org/petermbenjamin/go-open.svg?branch=master)](https://travis-ci.org/petermbenjamin/go-open)
@@ -9,13 +10,13 @@
 ### API
 
 ```sh
-go get github.com/petermbenjamin/go-open
+go get github.com/pbnj/go-open
 ```
 
 ### CLI
 
 ```sh
-go get github.com/petermbenjamin/go-open/cmd/gopen
+go get github.com/pbnj/go-open/cmd/gopen
 ```
 
 ## Usage
@@ -23,7 +24,7 @@ go get github.com/petermbenjamin/go-open/cmd/gopen
 ### API
 
 ```go
-import open "github.com/petermbenjamin/go-open"
+import open "github.com/pbnj/go-open"
 
 open.Open("file.txt")             // will open file in default text editor
 open.Open("https://google.com")   // will open url in default browser
@@ -40,4 +41,4 @@ gopen some_file.txt another_file.txt https://google.com https://github.com
 
 ## License
 
-MIT &copy; 2017 [Peter Benjamin](https://petermbenjamin.github.io)
+MIT &copy; 2017 [Peter Benjamin](https://pbnj.github.io)
