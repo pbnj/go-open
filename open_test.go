@@ -10,7 +10,6 @@ func TestOpen(t *testing.T) {
 		name string
 		args args
 	}{
-		// TODO: Add test cases.
 		{
 			name: "Open URL",
 			args: args{
