@@ -14,3 +14,7 @@ lint: ## Lint
 .PHONY: vet
 vet: ## Vet
 	go vet
+
+.PHONY: test
+test: ## Test
+	go test ./...
